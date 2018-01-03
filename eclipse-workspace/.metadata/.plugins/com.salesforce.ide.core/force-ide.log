@@ -77,3 +77,42 @@ java.lang.NullPointerException
  WARN [2018-01-02 18:27:37,065] (ConnectionFactory.java:clearCache:220) - Clearing the following cached connections
  WARN [2018-01-02 18:27:37,082] (DescribeObjectRegistry.java:clearCache:660) - No cached describes
  WARN [2018-01-02 18:27:37,088] (MetadataFactory.java:clearCache:128) - Clearing the following cached metadata stubs
+ WARN [2018-01-03 15:51:27,643] (ComponentResource.java:createFolder:418) - Unable to create '\srinidhi\src\postTemplates' folder: A resource exists with a different case: '/srinidhi/src/posttemplates'. Cause:
+ (1) A resource exists with a different case: '/srinidhi/src/posttemplates'.
+ERROR [2018-01-03 15:51:41,727] (SyncServiceListenerBroadcaster.java:handleException:59) - Error executing a contributed ISyncServiceListener
+java.lang.NullPointerException
+	at com.salesforce.ide.core.model.ComponentList.getComponentFactory(ComponentList.java:59)
+	at com.salesforce.ide.core.model.ComponentList.getComponentListForComponentType(ComponentList.java:261)
+	at com.salesforce.ide.debug.ui.sync.SyncActionListener.collectDebuggerElements(SyncActionListener.java:145)
+	at com.salesforce.ide.debug.ui.sync.SyncActionListener.collectApexDebuggerElementsWithOpenedEditors(SyncActionListener.java:120)
+	at com.salesforce.ide.debug.ui.sync.SyncActionListener.projectSync(SyncActionListener.java:113)
+	at com.salesforce.ide.core.services.hooks.SyncServiceListenerBroadcaster$1.run(SyncServiceListenerBroadcaster.java:54)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil.lambda$0(JFaceUtil.java:44)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:173)
+	at com.salesforce.ide.core.services.hooks.SyncServiceListenerBroadcaster.executeExtension(SyncServiceListenerBroadcaster.java:62)
+	at com.salesforce.ide.core.services.hooks.SyncServiceListenerBroadcaster.broadcast(SyncServiceListenerBroadcaster.java:40)
+	at com.salesforce.ide.core.model.ProjectPackageList.saveResources(ProjectPackageList.java:1066)
+	at com.salesforce.ide.core.model.ProjectPackageList.saveResources(ProjectPackageList.java:1000)
+	at com.salesforce.ide.core.services.ProjectService$1.run(ProjectService.java:2153)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at com.salesforce.ide.core.services.ProjectService.handleRetrieveResult(ProjectService.java:2149)
+	at com.salesforce.ide.ui.actions.RefreshResourceActionController.refreshSourceFolder(RefreshResourceActionController.java:214)
+	at com.salesforce.ide.ui.actions.RefreshResourceActionController.handleProjectRefresh(RefreshResourceActionController.java:154)
+	at com.salesforce.ide.ui.actions.RefreshResourceActionController.refreshResources(RefreshResourceActionController.java:123)
+	at com.salesforce.ide.ui.handlers.RefreshResourceHandler$1.execute(RefreshResourceHandler.java:87)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:107)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:128)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+ WARN [2018-01-03 15:51:41,758] (MarkerUtils.java:applyRetrieveMarker:325) - Unable to apply retrieve warning marker to resource - resource is null
+ WARN [2018-01-03 15:51:45,456] (MarkerUtils.java:applyRetrieveMarker:325) - Unable to apply retrieve warning marker to resource - resource is null
+ WARN [2018-01-03 15:51:45,471] (MarkerUtils.java:applyRetrieveMarker:325) - Unable to apply retrieve warning marker to resource - resource is null
+ WARN [2018-01-03 15:51:45,471] (MarkerUtils.java:applyRetrieveMarker:325) - Unable to apply retrieve warning marker to resource - resource is null
+ WARN [2018-01-03 15:51:45,471] (MarkerUtils.java:applyRetrieveMarker:325) - Unable to apply retrieve warning marker to resource - resource is null
+ WARN [2018-01-03 15:51:45,471] (MarkerUtils.java:applyRetrieveMarker:325) - Unable to apply retrieve warning marker to resource - resource is null
+ WARN [2018-01-03 15:51:45,487] (MarkerUtils.java:applyRetrieveMarker:325) - Unable to apply retrieve warning marker to resource - resource is null
+ WARN [2018-01-03 15:51:45,487] (MarkerUtils.java:applyRetrieveMarker:325) - Unable to apply retrieve warning marker to resource - resource is null
+ WARN [2018-01-03 15:51:45,487] (MarkerUtils.java:applyRetrieveMarker:325) - Unable to apply retrieve warning marker to resource - resource is null
