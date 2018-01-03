@@ -1,0 +1,9 @@
+.THIS .slds-fade-in-open {
+      opacity: 1;
+      visibility: visible;
+      transition: opacity 0.1s linear;
+      padding-top: 90px;
+      height: 100%;
+      padding-right: 20%;
+      padding-left: 20%;
+      }
