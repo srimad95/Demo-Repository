@@ -1,11 +1,5 @@
 # Demo-Repository
 
+git add VerifyDate.cls
 
 
-
-Repository
-asfqw  wetwiu wethwqf f
-dfwh wkjgw jkqwlet wepjwe 
-ewhbwkej qwoi4upow 
-
-end;
