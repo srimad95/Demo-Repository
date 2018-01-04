@@ -1,0 +1,15 @@
+eclipse.preferences.version=1
+endpointApiVersion=38.0
+endpointEnvironment=Production/Developer Edition
+endpointServer=login.salesforce.com
+httpsProtocol=true
+ideVersion=38.0
+keependpoint=false
+metadataFormatVersion=38.0
+namespacePrefix=abc_dev
+packageName=unpackaged
+preferToolingDeployment=true
+projectIdentifier=IDE-5231555668583298263
+readTimeout=600
+sessionId=
+username=srinidhi.m@brillio.com

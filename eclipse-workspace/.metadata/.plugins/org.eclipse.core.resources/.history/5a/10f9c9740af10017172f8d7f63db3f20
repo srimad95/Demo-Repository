@@ -1,0 +1,8 @@
+eclipse.preferences.version=1
+endpointApiVersion=38.0
+endpointEnvironment=Production/Developer Edition
+endpointServer=login.salesforce.com
+namespacePrefix=abc_dev
+packageName=unpackaged
+sessionId=
+username=srinidhi.m@brillio.com

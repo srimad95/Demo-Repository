@@ -1,0 +1,25 @@
+<aura:component controller="objlist_1_cmp_ctrl" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <ui:button press="{!abc_dev.getString}" label="click"/><br/> <!-- label="get Sobject list"-->
+    
+
+    <aura:Attribute name="sobjects" type="string[]"/>
+    
+   <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+        <thead>
+            <tr class="slds-text-title_caps">
+                <th scope="col">
+                    <div title="Lead Name" class="slds-truncate">Lead Name</div>
+                    <tr>
+                    <td> <ui:inputselect >
+                    <aura:iteration items="{!v.sobjects}" var="s">
+                  		<ui:inputSelectOption text="{!s}" />
+                     </aura:iteration>
+                   </ui:inputselect></td>
+                    </tr>
+                </th>
+                <th scope="col"></th>
+                <div title="Percentage" class="slds-truncate">Percentage</div>
+            </tr>
+        </thead>
+    </table>
+   </aura:component>

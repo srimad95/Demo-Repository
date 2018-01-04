@@ -1,0 +1,52 @@
+<aura:component controller="objlist_1_cmp_ctrl" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="opportunity" type="Opportunity" default="{ 'sobjectType': 'Opportunity' }"/>
+     <aura:Attribute name="sobjects" type="string[]"/>
+    <aura:attribute name="record" type="Object"/>
+    <aura:attribute name="simpleRecord" type="Object"/>
+    <aura:attribute name="recordError" type="String"/>
+
+    
+    <force:recordData aura:id="recordEditor"
+    layoutType="COMPACT"
+    recordId="{!v.recordId}"
+    targetError="{!v.recordError}"
+    targetRecord="{!v.record}"
+    targetFields="{!v.simpleRecord}"
+    mode="EDIT" />
+    
+    <div class="c-container">
+       
+        <lightning:layout horizontalAlign="center">
+            <lightning:layoutItem flexibility="auto" padding="around-small">
+               <label>Opporunity Name</label>
+                <force:inputField value="{!v.opportunity.Name}" /> 
+                   <label>Stage </label>
+             <ui:inputselect >
+                <aura:iteration items="{!v.sobjects}" var="s">
+                  		<ui:inputSelectOption text="{!s}" />
+                     </aura:iteration>
+                </ui:inputselect>
+                   <label>Close Date</label>
+             <force:inputField value="{!v.opportunity.CloseDate}" />  
+            </lightning:layoutItem>
+            
+            
+            <lightning:layoutItem flexibility="auto" padding="around-small">
+               <label>Project Start Date</label>
+             <force:inputField value="{!v.opportunity.abc_dev__Project_Start_Date__c}" />
+                <label>Project End Date</label>
+             <force:inputField value="{!v.opportunity.abc_dev__Project_End_Date__c}" />
+              <label>Amount</label>
+                <force:inputField value="{!v.opportunity.Amount}" />
+                <lightning:button variant="brand" label="Save" iconName="utility:save" iconPosition="left"  onclick="{!c.handleSaveRecord}"
+                class="slds-m-top_medium"/>
+
+            </lightning:layoutItem>
+            
+            
+            
+        </lightning:layout>
+        
+    </div>
+</aura:component>

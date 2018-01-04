@@ -1,0 +1,31 @@
+<aura:component controller="CommitController" implements="flexipage:availableForAllPageTypes" >
+    <aura:attribute name="com" type="Commit__c[]"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    	<div class="table table-bordered">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th><b>Date</b></th>
+                        <th><b>Practice</b></th>
+                        <th><b>MostLikely</b></th>
+                        <th><b>Booked</b></th>
+                        <th><b>Actual</b></th>
+                </tr>
+            </thead>
+            <tbody>
+                <aura:iteration items="{!v.com}" var="commit">
+                <tr>
+                    <td>{!commit.abc_dev__Date__c}</td>
+                    <td>{!commit.abc_dev__Practice__c}</td>
+                    <td>{!commit.abc_dev__MostLikely__c}</td>
+                     <td>{!commit. abc_dev__Booked__c}</td>
+                    <td>{!commit.abc_dev__Actual__c}</td>
+                </tr>
+                </aura:iteration>
+               
+                
+                        </tbody>
+       
+  		</table>
+    </div>
+</aura:component>
